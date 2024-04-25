@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orchha</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <style>
+    /* Custom CSS for logo alignment */
+    @media (min-width: 768px) {
+      .navbar-brand {
+        margin-right: auto; /* Push the logo to the left */
+      }
+    }
+    /* Custom CSS for footer alignment */
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+
+    .footer-part {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-part .icons {
+      margin-right: auto;
+    }
+
+    @media (max-width: 991.98px) {
+      footer .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+    .navbar {
+      background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+      box-shadow: 0px 5px 10px rgba(129, 129, 129, 0.5); /* Shadow effect */
+    }
+
+    /* Custom CSS for footer */
+    footer {
+      background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+      box-shadow: 0px 5px 10px rgba(129, 129, 129, 0.5); /* Shadow effect */
+    }
+    .icons i {
+      font-size: 24px; /* Adjust the size as needed */
+    }
+
+    .heading {
+      text-decoration: underline;
+    }
+    .card-s {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1%;
+    }
+
+    .card-sc {
+      width: calc(91% / 4);
+      /* border: 1px solid black; */
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      margin-bottom: 1%;
+      border-radius: 5px;
+    }
+
+    /* Cards img */
+    .card-img img {
+      width: 100%;
+      object-fit: fill;
+      height: 250px;
+      border-radius: 5px;
+    }
+
+    .F-1 {
+      font-size: 1.5vw;
+      font-weight: 500;
+      margin-top: 2%;
+    }
+    .F-2 {
+      font-size: 1vw;
+      font-weight: 400;
+      padding: 3%;
+    }
+    .T-C {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 890px) {
+      .card-sc {
+        width: calc(93% / 2);
+      }
+      /* .card-img img {
+        height: 200px;
+      } */
+      .F-1 {
+        font-size: clamp(28px, 1.5vw, 25px);
+      }
+      .F-2 {
+        font-size: clamp(20px, 1vw, 20px);
+        padding: 2%;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .card-sc {
+        width: calc(94% / 1);
+      }
+      /* .card-img img {
+        height: auto;
+      } */
+    }
+  </style>
+
+  <body>
+    <div class="main">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="./logo.jpg" alt="Madhya Pradesh Logo" height="70" />
+        </a>
+        Madhya Pradesh
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <!-- Align items to the right -->
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./culture.html">Culture</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Visiting Places
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./bhopal.html">Bhopal</a>
+                <a class="dropdown-item" href="./indore.html">Indore</a>
+                <a class="dropdown-item" href="./Gwalior.html">Gwalior</a>
+                <a class="dropdown-item" href="./orchha.html">Orchha</a>
+                <a class="dropdown-item" href="./Khajuraho.html">Khajuraho</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Gallery.html">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--Orchha-->
+      <div class="heading" style="margin-top: 1%; margin-bottom: 1%">
+        <h1 class="T-C">Top 10 Places to Visit in Orchha</h1>
+      </div>
+      <!-- Cards -->
+
+      <div class="card-s">
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./orchha1 Fort.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Orchha Fort</p>
+            <p class="F-2">
+              Orchha Fort, nestled on the banks of the Betwa River, is a
+              magnificent architectural marvel that reflects the grandeur of the
+              Bundela dynasty. This imposing complex comprises several palaces,
+              temples, and gardens, each showcasing exquisite craftsmanship and
+              intricate designs. Visitors can explore the fort's sprawling
+              courtyards, ornate chambers, and towering minarets, immersing
+              themselves in the rich history and heritage of Orchha.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./orchha 2 jai-ram-raj-sarkar.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Ram Raja Temple</p>
+            <p class="F-2">
+              The Ram Raja Temple, located in Orchha, holds a unique place in
+              Hindu mythology and is revered as a sacred pilgrimage site.
+              Dedicated to Lord Rama, the temple features stunning architecture,
+              adorned with intricate carvings and colorful frescoes. Devotees
+              flock here to seek blessings and witness the daily rituals,
+              including the unique tradition of offering prayers to Lord Rama as
+              a king.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./orchha 3 raja-mahal.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Raja-Mahal</p>
+            <p class="F-2">
+              Raja Mahal, or the King's Palace, is a splendid architectural
+              masterpiece that showcases the opulence and grandeur of Orchha's
+              rulers. Built by Raja Bir Singh Deo in the 16th century, the
+              palace boasts elaborate frescoes, intricate motifs, and ornate
+              arches that adorn its walls and ceilings. Visitors can explore the
+              palace's majestic halls, royal chambers, and beautifully
+              landscaped gardens, experiencing a glimpse of the regal lifestyle
+              of Orchha's royalty.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./orchha 4 chhatris-cenotaphs.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Chhatris-Cenotaphs</p>
+            <p class="F-2">
+              Orchha's skyline is dotted with Chhatris, or cenotaphs, dedicated
+              to its erstwhile rulers and nobles. These elegant structures, with
+              their intricately carved domes and spires, serve as memorials to
+              honor the departed souls of Orchha's royalty. Visitors can explore
+              the Chhatris' serene surroundings, offering panoramic views of the
+              Betwa River and the surrounding landscape, while reflecting on the
+              rich history and heritage of the region.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./Orchha 5 Jahangir Mahal.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Jahangir Mahal</p>
+            <p class="F-2">
+              Jahangir Mahal, a stunning palace in Orchha, stands as a testament
+              to the architectural prowess of the Mughal era. Built by Raja Bir
+              Singh Deo in the 17th century to honor Emperor Jahangir's visit,
+              the palace features a unique blend of Mughal and Rajput
+              architectural styles. Visitors can marvel at the palace's
+              intricate carvings, graceful arches, and ornate balconies,
+              immersing themselves in the grandeur and splendor of Orchha's
+              royal past.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./orchha 6 chatturbhuj-temple.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Chatturbhuj-Temple</p>
+            <p class="F-2">
+              Chatturbhuj Temple, dedicated to Lord Vishnu, is a sacred Hindu
+              shrine known for its architectural grandeur and spiritual
+              significance. Built by Raja Madhukar Shah in the 17th century, the
+              temple features a four-armed idol of Lord Vishnu in a majestic
+              standing posture. Visitors can admire the temple's ornate facade,
+              adorned with intricate carvings and sculptures, and witness the
+              rituals and ceremonies that unfold within its sanctum sanctorum.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./orchha 7 betva river.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Betva River</p>
+            <p class="F-2">
+              The Betwa River, flowing gracefully through Orchha, adds to the
+              town's picturesque charm and natural beauty. With its tranquil
+              waters, lush riverbanks, and verdant surroundings, the Betwa River
+              offers a serene backdrop for leisurely boat rides, picnics, and
+              nature walks. Visitors can explore the river's scenic beauty,
+              capture stunning views of Orchha's architectural landmarks, and
+              immerse themselves in the tranquil ambiance of this idyllic
+              setting.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./orchha 8 Lakshmi Temple.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Lakshmi Temple</p>
+            <p class="F-2">
+              The Lakshmi Temple, dedicated to the goddess Lakshmi, is a sacred
+              Hindu shrine known for its exquisite architecture and religious
+              significance. Built by Raja Bir Singh Deo in the 17th century, the
+              temple features intricate carvings, ornate pillars, and a towering
+              shikhara that rises majestically above its sanctum sanctorum.
+              Visitors can offer prayers, witness the temple's vibrant festivals
+              and ceremonies, and experience a sense of peace and spirituality
+              amidst its serene surroundings.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./Orchha 9 Wildlife Sanctuary.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Wildlife Sanctuary</p>
+            <p class="F-2">
+              Orchha Wildlife Sanctuary, located on the outskirts of the town,
+              is a haven for nature enthusiasts and wildlife lovers. Spread over
+              lush green forests and rocky terrain, the sanctuary is home to a
+              diverse range of flora and fauna, including deer, leopards, and
+              migratory birds. Visitors can explore the sanctuary's nature
+              trails, go birdwatching, and embark on wildlife safaris to witness
+              the region's rich biodiversity up close.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./Orchha 10 Adventure.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Orchha Adventure</p>
+            <p class="F-2">
+              Orchha Adventure offers thrilling outdoor activities and
+              adventures amidst the town's scenic landscapes and historical
+              landmarks. From river rafting on the Betwa River to zip-lining
+              across the lush forests, visitors can indulge in a variety of
+              adrenaline-pumping experiences. The town's natural beauty and
+              historical charm provide the perfect backdrop for adventure
+              enthusiasts seeking excitement and exploration. Whether it's rock
+              climbing, rappelling, or camping under the stars, Orchha Adventure
+              promises an unforgettable journey of discovery and thrill.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="footer-part">
+                <div class="icons">
+                  <!-- Add your icons here -->
+                  <a href="#"
+                    ><i
+                      class="fab fa-linkedin"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fab fa-github"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fab fa-instagram"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fab fa-twitter"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-part">
+                <ul class="list-unstyled quick-links">
+                  <li>Quick-links</li>
+                  <li>
+                    <a href="./bhopal.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Bhopal</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./indore.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Indore</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./Gwalior.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Gwalior</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./orchha.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Orchha</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./Khajuraho.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Khajuraho</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-part">
+                <p>About Us</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-part">
+                <p>Contact Us</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>

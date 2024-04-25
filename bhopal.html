@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhopal</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <style>
+    /* Custom CSS for logo alignment */
+    @media (min-width: 768px) {
+      .navbar-brand {
+        margin-right: auto; /* Push the logo to the left */
+      }
+    }
+    /* Custom CSS for footer alignment */
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+
+    .footer-part {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-part .icons {
+      margin-right: auto;
+    }
+
+    @media (max-width: 991.98px) {
+      footer .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+    .navbar {
+      background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+      box-shadow: 0px 5px 10px rgba(129, 129, 129, 0.5); /* Shadow effect */
+    }
+
+    /* Custom CSS for footer */
+    footer {
+      background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+      box-shadow: 0px 5px 10px rgba(129, 129, 129, 0.5); /* Shadow effect */
+    }
+    .icons i {
+      font-size: 24px; /* Adjust the size as needed */
+    }
+
+    .heading {
+      text-decoration: underline;
+    }
+    .card-s {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1%;
+    }
+
+    .card-sc {
+      width: calc(91% / 4);
+      /* border: 1px solid black; */
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      margin-bottom: 1%;
+      border-radius: 5px;
+    }
+
+    /* Cards img */
+    .card-img img {
+      width: 100%;
+      object-fit: fill;
+      height: 250px;
+      border-radius: 5px;
+    }
+
+    .F-1 {
+      font-size: 1.5vw;
+      font-weight: 500;
+      margin-top: 2%;
+    }
+    .F-2 {
+      font-size: 1vw;
+      font-weight: 400;
+      padding: 3%;
+    }
+    .T-C {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 890px) {
+      .card-sc {
+        width: calc(93% / 2);
+      }
+      /* .card-img img {
+        height: 200px;
+      } */
+      .F-1 {
+        font-size: clamp(28px, 1.5vw, 25px);
+      }
+      .F-2 {
+        font-size: clamp(20px, 1vw, 20px);
+        padding: 2%;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .card-sc {
+        width: calc(94% / 1);
+      }
+      /* .card-img img {
+        height: auto;
+      } */
+    }
+  </style>
+
+  <body>
+    <div class="main">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="./logo.jpg" alt="Madhya Pradesh Logo" height="70" />
+        </a>
+        Madhya Pradesh
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <!-- Align items to the right -->
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Culture</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Visiting Places
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./bhopal.html">Bhopal</a>
+                <a class="dropdown-item" href="./indore.html">Indore</a>
+                <a class="dropdown-item" href="./Gwalior.html">Gwalior</a>
+                <a class="dropdown-item" href="./orchha.html">Orchha</a>
+                <a class="dropdown-item" href="./Khajuraho.html">Khajuraho</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Gallery.html">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--Bhopal -->
+      <div class="heading" style="margin-top: 1%; margin-bottom: 1%">
+        <h1 class="T-C">Top 10 Places to Visit in Bhopal</h1>
+      </div>
+      <!-- Cards -->
+
+      <div class="card-s">
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./bhopal 1 van bihar.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Van Bihar</p>
+            <p class="F-2">
+              Van Vihar, nestled in the heart of Bhopal, is a tranquil oasis
+              that offers a serene escape from the urban hustle and bustle. This
+              lush green expanse serves as a haven for nature lovers and
+              wildlife enthusiasts, boasting a diverse array of flora and fauna.
+              Visitors can explore the park's winding pathways, embark on nature
+              trails, or simply relax amidst the tranquil surroundings. With its
+              scenic beauty and peaceful ambiance, Van Vihar is the perfect
+              destination for a leisurely stroll or a peaceful retreat into
+              nature.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./bhopal 9 state museum.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">State Museum of Madhya Pradesh</p>
+            <p class="F-2">
+              The State Museum of Madhya Pradesh, located in Bhopal, is a
+              treasure trove of artifacts and exhibits that showcase the rich
+              cultural heritage of the region. From ancient sculptures and
+              archaeological finds to intricate textiles and historical
+              artifacts, the museum offers a comprehensive glimpse into the
+              history and culture of Madhya Pradesh. Visitors can explore the
+              museum's galleries, attend informative lectures, and participate
+              in interactive sessions to learn about the diverse traditions and
+              artistic legacies of the state.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./bhopal 3 rock-shelters-of-bhimbetka.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Bhimbetka</p>
+            <p class="F-2">
+              Bhimbetka, a UNESCO World Heritage Site located near Bhopal, is
+              renowned for its ancient rock shelters and prehistoric cave
+              paintings. Dating back thousands of years, these rock art sites
+              provide valuable insights into the lives and cultures of early
+              human societies. Visitors can explore the cave complexes, marvel
+              at the intricate rock paintings depicting scenes of hunting,
+              dancing, and daily life, and immerse themselves in the rich
+              history and heritage of the region.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./bhopal 4 buddhist-monuments-at.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Buddhist-Monuments at Sanchi</p>
+            <p class="F-2">
+              The Buddhist Monuments at Sanchi, located just a short drive from
+              Bhopal, are a testament to India's rich Buddhist heritage. The
+              site, comprising stupas, monasteries, and intricately carved
+              pillars, dates back to the 3rd century BCE and is one of the
+              oldest and most well-preserved Buddhist complexes in the world.
+              Visitors can explore the ancient ruins, admire the exquisite
+              carvings and sculptures, and soak in the spiritual ambiance of
+              this sacred site.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./bhopal 6 badi jheel.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Badi Jheel</p>
+            <p class="F-2">
+              Badi Jheel, or the Upper Lake, is a picturesque water body that
+              forms the heart of Bhopal's landscape. Spanning over several
+              square kilometers, this man-made lake offers scenic views and
+              recreational activities for visitors. Whether it's boating on the
+              tranquil waters, picnicking on the lakeside promenades, or simply
+              enjoying the sunset over the horizon, Badi Jheel provides the
+              perfect setting for relaxation and rejuvenation amidst nature's
+              beauty.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./bhopal 7 laxmi narayan temple.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Laxmi Narayan Temple</p>
+            <p class="F-2">
+              The Laxmi Narayan Temple, also known as the Birla Mandir, is a
+              stunning architectural masterpiece located in Bhopal. Dedicated to
+              the Hindu deities Laxmi and Narayan, the temple boasts intricate
+              carvings, ornate domes, and a serene ambiance that attracts
+              devotees and tourists alike. Visitors can marvel at the temple's
+              architectural beauty, offer prayers at the sanctum sanctorum, and
+              immerse themselves in the spiritual energy of this sacred site.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./bhopal 7. 2 the-memorial-pillar-shourya.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Shourya Smarak</p>
+            <p class="F-2">
+              Shourya Smarak, a war memorial located in Bhopal, honors the brave
+              soldiers who sacrificed their lives for the nation. The memorial
+              features a central tower surrounded by beautifully landscaped
+              gardens, fountains, and sculptures that pay homage to the valor
+              and sacrifice of the Indian armed forces. Visitors can explore the
+              museum inside the memorial, which showcases artifacts,
+              photographs, and stories of the brave soldiers, offering a
+              poignant reminder of their courage and dedication.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./bhopal 5 upper-lake.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Upper-Lake</p>
+            <p class="F-2">
+              The Upper Lake, also known as Bada Talab, is a scenic water body
+              that defines the beauty of Bhopal. Spanning over several square
+              kilometers, this man-made lake offers opportunities for boating,
+              birdwatching, and leisurely strolls along its promenades.
+              Surrounded by lush greenery and dotted with islands, the Upper
+              Lake provides a tranquil escape from the hustle and bustle of city
+              life, making it a popular destination for locals and tourists
+              alike.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./bhopal 8 taj ul.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Taj ul Masajid</p>
+            <p class="F-2">
+              Taj ul Masajid, one of the largest mosques in India, is a
+              magnificent architectural marvel located in Bhopal. Its grand
+              domes, towering minarets, and intricate marble carvings make it a
+              sight to behold. Visitors can explore the mosque's sprawling
+              courtyards, offer prayers in the ornate prayer halls, and admire
+              the stunning craftsmanship that adorns every corner of this sacred
+              place.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./bhopal 2 indira-gandhi-rashtriya.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Indira Gandhi Rashtriya Manav Sangrahalaya</p>
+            <p class="F-2">
+              The Indira Gandhi Rashtriya Manav Sangrahalaya, also known as the
+              National Museum of Mankind, is an anthropological museum located
+              in Bhopal. Spread over a sprawling campus, the museum showcases
+              the rich cultural diversity of India's tribes and indigenous
+              communities. Visitors can explore the museum's outdoor exhibits,
+              traditional dwellings, and cultural artifacts, gaining insights
+              into the lifestyles, traditions, and customs of India's diverse
+              population.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="footer-part">
+                <div class="icons">
+                  <!-- Add your icons here -->
+                  <a href="#"
+                    ><i
+                      class="fab fa-linkedin"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fab fa-github"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fab fa-instagram"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fab fa-twitter"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-part">
+                <ul class="list-unstyled quick-links">
+                  <li>Quick-links</li>
+                  <li>
+                    <a href="./bhopal.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Bhopal</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./indore.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Indore</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./Gwalior.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Gwalior</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./orchha.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Orchha</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./Khajuraho.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Khajuraho</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-part">
+                <p>About Us</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-part">
+                <p>Contact Us</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
+  </body>
+</html>

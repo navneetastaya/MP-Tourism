@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gwalior</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <style>
+    /* Custom CSS for logo alignment */
+    @media (min-width: 768px) {
+      .navbar-brand {
+        margin-right: auto; /* Push the logo to the left */
+      }
+    }
+    /* Custom CSS for footer alignment */
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+
+    .footer-part {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-part .icons {
+      margin-right: auto;
+    }
+
+    @media (max-width: 991.98px) {
+      footer .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+    .navbar {
+      background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+      box-shadow: 0px 5px 10px rgba(129, 129, 129, 0.5); /* Shadow effect */
+    }
+
+    /* Custom CSS for footer */
+    footer {
+      background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+      box-shadow: 0px 5px 10px rgba(129, 129, 129, 0.5); /* Shadow effect */
+    }
+    .icons i {
+      font-size: 24px; /* Adjust the size as needed */
+    }
+
+    .heading {
+      text-decoration: underline;
+    }
+    .card-s {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1%;
+    }
+
+    .card-sc {
+      width: calc(91% / 4);
+      /* border: 1px solid black; */
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      margin-bottom: 1%;
+      border-radius: 5px;
+    }
+
+    /* Cards img */
+    .card-img img {
+      width: 100%;
+      object-fit: fill;
+      height: 250px;
+      border-radius: 5px;
+    }
+
+    .F-1 {
+      font-size: 1.5vw;
+      font-weight: 500;
+      margin-top: 2%;
+    }
+    .F-2 {
+      font-size: 1vw;
+      font-weight: 400;
+      padding: 2%;
+    }
+    .T-C {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 890px) {
+      .card-sc {
+        width: calc(93% / 2);
+      }
+      /* .card-img img {
+        height: 200px;
+      } */
+      .F-1 {
+        font-size: clamp(28px, 1.5vw, 25px);
+      }
+      .F-2 {
+        font-size: clamp(20px, 1vw, 20px);
+        padding: 2%;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .card-sc {
+        width: calc(94% / 1);
+      }
+      /* .card-img img {
+        height: auto;
+      } */
+    }
+  </style>
+
+  <body>
+    <div class="main">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="./logo.jpg" alt="Madhya Pradesh Logo" height="70" />
+        </a>
+        Madhya Pradesh
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <!-- Align items to the right -->
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./culture.html">Culture</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Visiting Places
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./bhopal.html">Bhopal</a>
+                <a class="dropdown-item" href="./indore.html">Indore</a>
+                <a class="dropdown-item" href="./Gwalior.html">Gwalior</a>
+                <a class="dropdown-item" href="./orchha.html">Orchha</a>
+                <a class="dropdown-item" href="./Khajuraho.html">Khajuraho</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Gallery.html">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Gwalior -->
+      <div class="heading" style="margin-top: 1%; margin-bottom: 1%">
+        <h1 class="T-C">Top 10 Places to Visit in Gwalior</h1>
+      </div>
+      <!-- Cards Slider  -->
+
+      <div class="card-s">
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./fort.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Gwalior Fort</p>
+            <p class="F-2">
+              Perched on a sandstone hilltop, Gwalior Fort is one of the largest
+              forts in India and offers panoramic views of the city. Built by
+              Raja Man Singh Tomar in the 15th century, it boasts magnificent
+              palaces, temples, and water tanks. The fort's architecture
+              reflects the influence of various dynasties that ruled the region,
+              including the Tomars, Mughals, and Marathas. Visitors can explore
+              attractions like the Man Singh Palace, Gujari Mahal, and the
+              iconic Saas Bahu Temples.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./jai.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Jai Vilas Palace</p>
+            <p class="F-2">
+              Constructed in the late 19th century by Maharaja Jayajirao
+              Scindia, Jai Vilas Palace is a splendid example of European
+              architecture blended with Indian motifs. The palace covers an area
+              of over 75 acres and features lavish interiors adorned with
+              Belgian chandeliers, Italian marble flooring, and Persian carpets.
+              The Scindia Museum housed within the palace exhibits a fascinating
+              collection of artifacts, including weaponry, royal carriages, and
+              rare manuscripts.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./sahastrabahu.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Sahastra Bahu Temples</p>
+            <p class="F-2">
+              Also known as the Sahastra Bahu Temples, these ancient Hindu
+              temples are dedicated to Lord Vishnu and are renowned for their
+              intricate carvings and architectural splendor. The larger temple,
+              dedicated to Lord Vishnu, is adorned with intricate sculptures
+              depicting various mythological scenes, while the smaller temple is
+              dedicated to Lord Shiva. The temples date back to the 9th century
+              and are a testament to the architectural brilliance of the era.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./sun-temple.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Sun Temple</p>
+            <p class="F-2">
+              Modeled after the famous Sun Temple of Konark, Odisha, the Sun
+              Temple in Gwalior is a stunning example of medieval Indian
+              architecture. Built in the 9th century by King Narasimhadeva I of
+              the Gurjara-Pratihara dynasty, the temple is dedicated to the Sun
+              God, Surya. It features a grand entrance adorned with intricate
+              carvings of horses, elephants, and celestial beings, leading to a
+              sanctum housing a colossal image of the Sun God.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./tansen.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Tansen Tomb</p>
+            <p class="F-2">
+              Situated in the vicinity of Gwalior Fort, Tansen Tomb is the
+              mausoleum of the legendary musician Tansen, who was one of the
+              Navaratnas (nine gems) in the court of Emperor Akbar. Built-in
+              Mughal architectural style, the tomb is a serene place surrounded
+              by lush gardens and adorned with intricate marble carvings. It is
+              believed that Tansen's tomb is a place of pilgrimage for music
+              lovers, who pay their respects to the great musician by offering
+              prayers and musical tributes.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./samadhi-of-rani-lakshmi.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">
+              Samadhi of Rani
+              <span style="white-space: nowrap">Lakshmibai</span>
+            </p>
+            <p class="F-2">
+              The Samadhi of Rani Lakshmibai, nestled in Gwalior, honors the
+              valiant Queen's sacrifice during the 1857 Indian Rebellion.
+              Adorned with intricate carvings, the monument serves as a serene
+              homage to her bravery. Surrounded by verdant gardens, it offers a
+              peaceful place for reflection and tribute. Visitors can pay
+              respects to Rani Lakshmibai, a symbol of courage and resilience in
+              India's history. Her legacy lives on, inspiring generations with
+              her unwavering spirit of freedom.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./bada.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Maharaj Bada</p>
+            <p class="F-2">
+              Maharaj Bada, nestled in Gwalior's heart, is a bustling
+              marketplace brimming with local culture. Visitors can explore
+              vibrant shops offering traditional handicrafts and textiles. The
+              market's lively atmosphere is complemented by street food stalls
+              serving delicious chaats and snacks. Maharaj Bada also hosts
+              cultural performances, adding to its charm. It's a must-visit for
+              a taste of Gwalior's vibrant life and flavors.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./teli-ka-mandir.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Teli Ka Mandir</p>
+            <p class="F-2">
+              Teli Ka Mandir, situated within the majestic Gwalior Fort complex,
+              is a captivating architectural marvel. This unique temple is
+              renowned for its towering shikhara (spire) and intricate carvings.
+              Dedicated to Lord Vishnu, it showcases a blend of North Indian
+              Nagara and South Indian Dravidian architectural styles. Visitors
+              can admire the temple's grandeur and explore its rich history
+              within the fortified walls of Gwalior Fort. Teli Ka Mandir stands
+              as a testament to the cultural diversity and architectural
+              brilliance of ancient India.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./Mitawali 2.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Mitawali</p>
+            <p class="F-2">
+              Nestled amidst the rustic beauty of Gwalior's countryside,
+              Mitawali is a hidden gem steeped in history and tranquility. The
+              main attraction of this quaint village is the ancient Chausath
+              Yogini Temple, dating back to the 8th century. Perched atop a
+              hill, this circular temple is dedicated to the goddess Kali and
+              features 64 intricately carved yogini sculptures. Visitors can
+              marvel at the architectural brilliance of this lesser-known gem
+              and soak in the serene ambience of rural India. Mitawali offers a
+              refreshing escape from the hustle and bustle of city life, making
+              it a perfect destination for history enthusiasts and nature lovers
+              alike.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./Gopachal-Parvat.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Gopachal-Parvat</p>
+            <p class="F-2">
+              Gopachal Parvat, nestled on the outskirts of Gwalior, is a haven
+              for spiritual seekers and architecture enthusiasts alike. This
+              rocky hillside is adorned with a cluster of Jain temples, dating
+              back to the 8th and 9th centuries. Carved out of the natural rock
+              formations, these temples showcase exquisite Jain architecture and
+              intricate sculptures depicting Tirthankaras and celestial beings.
+              Visitors can embark on a serene pilgrimage up the hill, exploring
+              the ancient shrines and soaking in the panoramic views of the
+              surrounding landscape. Gopachal Parvat offers a tranquil retreat,
+              inviting visitors to delve into the rich spiritual and cultural
+              heritage of Jainism amidst nature's serene embrace.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="footer-part">
+                <div class="icons">
+                  <!-- Add your icons here -->
+                  <a href="#"
+                    ><i
+                      class="fab fa-linkedin"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fab fa-github"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fab fa-instagram"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fab fa-twitter"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-part">
+                <ul class="list-unstyled quick-links">
+                  <li>Quick-links</li>
+                  <li>
+                    <a href="./bhopal.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Bhopal</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./indore.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Indore</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./Gwalior.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Gwalior</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./orchha.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Orchha</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./Khajuraho.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Khajuraho</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-part">
+                <p>About Us</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-part">
+                <p>Contact Us</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
+  </body>
+</html>

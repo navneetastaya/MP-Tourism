@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khajuraho</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <style>
+    /* Custom CSS for logo alignment */
+    @media (min-width: 768px) {
+      .navbar-brand {
+        margin-right: auto; /* Push the logo to the left */
+      }
+    }
+    /* Custom CSS for footer alignment */
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+
+    .footer-part {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-part .icons {
+      margin-right: auto;
+    }
+
+    @media (max-width: 991.98px) {
+      footer .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+    .navbar {
+      background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+      box-shadow: 0px 5px 10px rgba(129, 129, 129, 0.5); /* Shadow effect */
+    }
+
+    /* Custom CSS for footer */
+    footer {
+      background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+      box-shadow: 0px 5px 10px rgba(129, 129, 129, 0.5); /* Shadow effect */
+    }
+    .icons i {
+      font-size: 24px; /* Adjust the size as needed */
+    }
+    .heading {
+      text-decoration: underline;
+    }
+    .card-s {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1%;
+    }
+
+    .card-sc {
+      width: calc(91% / 4);
+      /* border: 1px solid black; */
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      margin-bottom: 1%;
+      border-radius: 5px;
+    }
+
+    /* Cards img */
+    .card-img img {
+      width: 100%;
+      object-fit: fill;
+      height: 250px;
+      border-radius: 5px;
+    }
+
+    .F-1 {
+      font-size: 1.5vw;
+      font-weight: 500;
+      margin-top: 2%;
+    }
+    .F-2 {
+      font-size: 1vw;
+      font-weight: 400;
+      padding: 3%;
+    }
+    .T-C {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 890px) {
+      .card-sc {
+        width: calc(93% / 2);
+      }
+      /* .card-img img {
+        height: 200px;
+      } */
+      .F-1 {
+        font-size: clamp(28px, 1.5vw, 25px);
+      }
+      .F-2 {
+        font-size: clamp(20px, 1vw, 20px);
+        padding: 2%;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .card-sc {
+        width: calc(94% / 1);
+      }
+      /* .card-img img {
+        height: auto;
+      } */
+    }
+  </style>
+
+  <body>
+    <div class="main">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="./logo.jpg" alt="Madhya Pradesh Logo" height="70" />
+        </a>
+        Madhya Pradesh
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <!-- Align items to the right -->
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./culture.html">Culture</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Visiting Places
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./bhopal.html">Bhopal</a>
+                <a class="dropdown-item" href="./indore.html">Indore</a>
+                <a class="dropdown-item" href="./Gwalior.html">Gwalior</a>
+                <a class="dropdown-item" href="./orchha.html">Orchha</a>
+                <a class="dropdown-item" href="./Khajuraho.html">Khajuraho</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Gallery.html">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Khajuraho-->
+      <div class="heading" style="margin-top: 1%; margin-bottom: 1%">
+        <h1 class="T-C">Top 10 Places to Visit in Khajuraho</h1>
+      </div>
+      <!-- Cards -->
+
+      <div class="card-s">
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./kh1 parsvanath-temple.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Parsvanath-Temple</p>
+            <p class="F-2">
+              The Parsvanath Temple, one of the most revered Jain temples in
+              Khajuraho, stands as a testament to the city's rich cultural
+              heritage and architectural brilliance. Built in the 10th century,
+              this temple is dedicated to Lord Parsvanath, the 23rd Tirthankara
+              of Jainism. Its intricately carved sculptures, depicting various
+              Jain deities and mythical creatures, are a marvel of
+              craftsmanship. Visitors can admire the temple's serene ambiance,
+              intricate detailing, and spiritual significance, making it a
+              must-visit destination for history enthusiasts and religious
+              pilgrims alike.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./kh2  Khajuraho Temples.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Khajuraho Temples</p>
+            <p class="F-2">
+              The Khajuraho Temples, a UNESCO World Heritage Site, are a
+              stunning testament to India's rich architectural and cultural
+              heritage. Dating back to the Chandela dynasty from the 10th to
+              12th centuries, these temples are renowned for their exquisite
+              carvings, intricate sculptures, and erotic art. Visitors can
+              explore the Western Group of Temples, which includes iconic
+              structures like the Kandariya Mahadev Temple and the Lakshmana
+              Temple, marveling at their architectural grandeur and spiritual
+              significance. The Khajuraho Temples are not just architectural
+              wonders but also a symbol of India's artistic and cultural legacy.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./kh3 Devi Jagdamba Temple.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Devi Jagdamba Temple</p>
+            <p class="F-2">
+              The Devi Jagdamba Temple, dedicated to the Hindu goddess Devi
+              Jagdamba, is a magnificent shrine located in the Western Group of
+              Temples in Khajuraho. Built in the 12th century, the temple is
+              renowned for its impressive architecture, intricate carvings, and
+              spiritual significance. Visitors can admire the temple's ornate
+              facade, adorned with sculptures of celestial beings, mythical
+              creatures, and divine motifs, reflecting the rich symbolism of
+              Hindu mythology. The Devi Jagdamba Temple is a sacred pilgrimage
+              site and a testament to Khajuraho's architectural splendor and
+              religious devotion.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./kh4 Lakshmana Temple.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Lakshmana Temple</p>
+            <p class="F-2">
+              The Lakshmana Temple, one of the most prominent structures in the
+              Western Group of Temples in Khajuraho, is dedicated to the Hindu
+              deity Lord Vishnu. Built in the 10th century, this temple is
+              renowned for its exquisite architecture, intricate carvings, and
+              spiritual significance. Visitors can admire the temple's towering
+              shikhara, adorned with sculptures of gods, goddesses, and
+              celestial beings, depicting scenes from Hindu mythology. The
+              Lakshmana Temple is a masterpiece of Chandela architecture and a
+              symbol of Khajuraho's rich cultural heritage.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./kh5 Khajuraho's Textile & Looms.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Khajuraho's Textile & Looms</p>
+            <p class="F-2">
+              Khajuraho's Textile & Looms industry is renowned for its exquisite
+              craftsmanship, intricate designs, and vibrant colors. The town's
+              skilled artisans create a wide range of textiles, including
+              sarees, dupattas, and fabrics, using traditional techniques passed
+              down through generations. Visitors can explore Khajuraho's
+              bustling markets, interact with local weavers, and purchase
+              authentic handloom products as souvenirs. The textiles of
+              Khajuraho are not just garments but also a reflection of the
+              town's rich cultural heritage and artistic legacy.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./kh6 Kandariya Mahadev Temple.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Kandariya Mahadev Temple</p>
+            <p class="F-2">
+              The Kandariya Mahadev Temple, the largest and most ornate temple
+              in Khajuraho, is dedicated to Lord Shiva. Built in the 11th
+              century, this temple is renowned for its towering shikhara,
+              intricate carvings, and spiritual significance. Visitors can
+              admire the temple's elaborate facade, adorned with sculptures of
+              gods, goddesses, and mythical creatures, depicting scenes from
+              Hindu mythology. The Kandariya Mahadev Temple is a masterpiece of
+              Chandela architecture and a symbol of Khajuraho's rich cultural
+              heritage and religious devotion.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./Kh7 Dulhadev Temple.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Dulhadev Temple</p>
+            <p class="F-2">
+              The Dulhadev Temple, located in the Western Group of Temples in
+              Khajuraho, is dedicated to the Hindu deity Lord Shiva. Built in
+              the 12th century, this temple is renowned for its exquisite
+              architecture, intricate carvings, and spiritual significance.
+              Visitors can admire the temple's elegant design, adorned with
+              sculptures of gods, goddesses, and celestial beings, depicting
+              scenes from Hindu mythology. The Dulhadev Temple is a testament to
+              Khajuraho's rich cultural heritage and religious devotion.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./kh8 Chaturbhuj Temple.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Chaturbhuj Temple</p>
+            <p class="F-2">
+              The Chaturbhuj Temple, dedicated to the Hindu deity Lord Vishnu,
+              is an ancient shrine located in the Eastern Group of Temples in
+              Khajuraho. Built in the 12th century, this temple is renowned for
+              its simple yet elegant architecture and spiritual significance.
+              Visitors can admire the temple's serene ambiance, ornate carvings,
+              and sacred rituals, making it a popular pilgrimage site for
+              devotees and tourists alike.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./kh9 Varaha Temple.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Varaha Temple</p>
+            <p class="F-2">
+              The Varaha Temple, dedicated to the Hindu deity Varaha, is an
+              ancient shrine located in the Western Group of Temples in
+              Khajuraho. Built in the 10th century, this temple is renowned for
+              its exquisite architecture, intricate carvings, and spiritual
+              significance. Visitors can admire the temple's majestic facade,
+              adorned with sculptures of Varaha, the boar incarnation of Lord
+              Vishnu, and other mythical creatures, depicting scenes from Hindu
+              mythology.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./kh10 Matangeshwara Temple.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Matangeshwara Temple</p>
+            <p class="F-2">
+              The Matangeshwara Temple, dedicated to the Hindu deity Lord Shiva,
+              is a sacred shrine located in the Western Group of Temples in
+              Khajuraho. Built in the 9th century, this temple is renowned for
+              its impressive architecture, intricate carvings, and spiritual
+              significance. Visitors can admire the temple's towering shikhara,
+              adorned with sculptures of Shiva and other deities, and witness
+              the sacred rituals and ceremonies that take place within its
+              sanctum sanctorum.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./kh11 Viswanath Temple.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Viswanath Temple</p>
+            <p class="F-2">
+              The Viswanath Temple, located in the Western Group of Temples in
+              Khajuraho, is a sacred shrine dedicated to the Hindu deity Lord
+              Shiva. Built in the 11th century, this temple is renowned for its
+              exquisite architecture, intricate carvings, and spiritual
+              significance. Visitors can admire the temple's ornate facade,
+              adorned with sculptures of gods, goddesses, and celestial beings,
+              depicting scenes from Hindu mythology. The Viswanath Temple is not
+              just a place of worship but also a symbol of Khajuraho's rich
+              cultural heritage and religious devotion.
+            </p>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="card-img">
+            <img src="./kh12 Nandi Temple.jpg" alt />
+          </div>
+          <div class="T-C">
+            <p class="F-1">Nandi Temple</p>
+            <p class="F-2">
+              The Nandi Temple, situated in the Western Group of Temples in
+              Khajuraho, is dedicated to Nandi, the sacred bull and vehicle of
+              the Hindu deity Lord Shiva. Built in the 11th century, this small
+              yet elegant shrine is renowned for its intricate carvings, serene
+              ambiance, and spiritual significance. Visitors can admire the
+              temple's beautifully sculpted Nandi idol, symbolizing strength,
+              devotion, and loyalty, and witness the rituals and ceremonies that
+              take place within its sanctum sanctorum. The Nandi Temple is a
+              sacred pilgrimage site and a testament to Khajuraho's rich
+              cultural heritage and religious traditions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="footer-part">
+                <div class="icons">
+                  <!-- Add your icons here -->
+                  <a href="#"
+                    ><i
+                      class="fab fa-linkedin"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fab fa-github"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fab fa-instagram"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fab fa-twitter"
+                      style="color: rgba(0, 0, 0, 0.5)"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-part">
+                <ul class="list-unstyled quick-links">
+                  <li>Quick-links</li>
+                  <li>
+                    <a href="./bhopal.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Bhopal</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./indore.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Indore</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./Gwalior.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Gwalior</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./orchha.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Orchha</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./Khajuraho.html" style="color: rgba(0, 0, 0, 0.5)"
+                      >Top 10 Places to Visit in Khajuraho</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-part">
+                <p>About Us</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-part">
+                <p>Contact Us</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
+  </body>
+</html>
